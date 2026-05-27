@@ -59,7 +59,7 @@ def clean_and_engineer_features(df):
     df = df.drop(columns=columns_to_drop)
 
     categorical_columns = ["Sex", "Embarked", "Title", "Family_size"]
-    df = pd.get_dummies(df, columns=categorical_columns, drop_first=False)
+    df = pd.get_dummies(df, columns=categorical_columns, drop_first=False, dtype=int)
 
     target = df.pop("Survived")
     df.insert(0, "Survived", target)
