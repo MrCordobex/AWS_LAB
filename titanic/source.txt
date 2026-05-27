@@ -1,0 +1,2 @@
+To check original data fields meaning
+https://www.kaggle.com/datasets/yasserh/titanic-dataset/data
